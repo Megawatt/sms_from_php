@@ -1,0 +1,38 @@
+===============================================================
+= Send SMS from PHP
+===============================================================
+
+This project demonstrates how to send SMS messages from PHP. The main code file is index.php.
+
+The general idea is that all major US carriers allow sending 
+SMS messages to a phone number using an email address format.
+For example, in the AT&T case the address would be 
+
+555-111-2222@txt.att.net
+
+where 555-111-2222 is the destination phone number (change that to a real number you
+want to send the message to).
+
+PHPmailer is used for outgoing messages. For completeness, the PHPmailer scripts for SMTP
+are included here. PHPmailer can be found at the following address, including license
+information:
+
+http://code.google.com/a/apache-extras.org/p/phpmailer/
+
+To make this demo work for you, you will need to edit config.php to include
+your smtp server address etc. Note that in this example authentication is not used - you may need to add
+it depending on your smtp server configuration. See the README file in the PHPmailer documentation.
+
+The makefile on the top level directory makes it easy to install the files to a local server 
+directory:
+ 
+ 1) change the target directory in the makefile according to your directory structure, 
+    e.g. /var/www/sms
+ 2) type "make install" or "sudo make install" 
+
+To remove the installed files from the target directory, type
+
+   make clean  (or sudo make clean)
+
+
+
