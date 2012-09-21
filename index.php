@@ -6,15 +6,15 @@
   <style type="text/css">
     body
         {
-        background-color:#b6b6b6;
+        background:#e6e6e6 url(page_bg.png) repeat-y center top;
 	font-family:Arial, Helvetica, sans-serif;
 	margin:0 auto;
 	padding:0;
         }
     .main
         {
+	background-color:#e6e6e6;
         width: 760px;
-        background-color:#e6e6e6;
         margin:0 auto;       
 	padding:20px 0;
         }
